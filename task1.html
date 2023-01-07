@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    
+</head>
+<style>
+    body{
+        text-align: center;
+        margin-top: 100px;
+        background-color: darkcyan;
+    }
+    h1{
+        color: black;
+        font-weight: bold;
+    }
+    input{
+        border: 2px solid rgb(183, 218, 218);
+        padding: 4px;
+        color:rgb(92, 206, 139) ;
+        width: 40%;
+    }
+    button{
+        background-color: lightblue;
+        color: white;
+        border: none;
+        padding: 4px;
+        font-weight: bold;
+        margin: 2px;
+    }
+    .container{
+        /* border: 2px solid black; */
+        width: 50%;
+        margin: auto;
+        min-height:400px ;
+        box-shadow: 1px 1px 3px 1px grey;
+        padding-top: 20px;
+        background-color: rgb(185, 219, 152)
+        ;
+    }
+</style>
+<body>
+    <script src="task2.js"></script>
+    <div class="container">
+    <div>
+        <h1>GROCERY BUD :</h1>
+        <input placeholder="e.g bread, butter" type="text"  id="todo">
+        <button onclick="addbuttn()">add item</button>
+        <button onclick="deleteall()">DELETE ALL</button>
+    </div>
+    <div>
+        <ul id="list"></ul>
+
+    </div>
+</div>
+</body>
+</html>
